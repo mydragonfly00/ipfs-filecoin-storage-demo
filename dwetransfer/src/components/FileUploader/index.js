@@ -15,7 +15,6 @@ export const FileUploader = ({setCids, setIpfsError, setSendingState}) => {
         event.preventDefault();
 
         const client = new Web3Storage({ token: process.env.REACT_APP_WEB3STORAGE_API_TOKEN });
-        console.log(process.env.REACT_APP_WEB3STORAGE_API_TOKEN);
 
         try {
             setSendingState(true);
