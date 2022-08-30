@@ -21,7 +21,7 @@ function App() {
             <Card.Img variant="top" src={Logo} />
             <Card.Body>
               <Card.Title>
-                WeTransfer in the Web 3.0 
+                WeTransfer in the Web 3.1 
                 </Card.Title>
               { (cids.length === 0) && (sending === false) ? <FileUploader setCids={setCids} setIpfsError={setIpfsError} setSendingState={setSendingState} /> :null }
               { cids.length !== 0 ? <Success cids={cids} setCids={setCids} setSendingState={setSendingState} /> : null }
